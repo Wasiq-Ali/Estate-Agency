@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="assets/images/favicon.png"
+      type="image/x-icon"
+    />
+    <title>Estate Agency</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/owl.carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/css/animsition.css"
+      integrity="sha512-QOEtUtkXE66sy/LeOXlkdQn8ke3DDTTyJ/L17lGdUhnhEsA3dAWfl+EBCoEFyJcFHP9Cs0hgTCtntO4Ty8Knlg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="assets/css/owl.transitions.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/media-query.css" />
+  </head>
+
+  <body>
+    <!-- Shadow-Overlay -->
+    <div id="shadow"></div>
+
+    <!-- Header-Section -->
+    <header>
+      <div class="wrapper section-p1" id="header">
+        <div class="hamburger">
+          <i class="fa-solid fa-bars" id="bar-icon"></i>
+        </div>
+        <div class="col-1">
+          <a href="index.html" class="logo"
+            ><h1>Estate<span>Agency</span></h1></a
+          >
+        </div>
+        <div class="col-2">
+          <nav>
+            <ul id="mobile-menu">
+              <li class="active"><a href="#">Home</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Property</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="col-3">
+          <div class="serch-bar" id="search-bar">
+            <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="search-bar" id="search">
+      <div class="wrapper">
+        <div class="h-flex">
+          <h2>Search Property</h2>
+          <i class="fa-solid fa-xmark" id="close"></i>
+        </div>
+        <form action="#">
+          <div class="form-inputs">
+            <div><label for="key">Keyword</label></div>
+            <input type="text" placeholder="Keyword" autocomplete="off" />
+          </div>
+          <div class="flexform">
+            <div class="row">
+              <div class="flex-form-left">
+                <div><label for="Type">City</label></div>
+                <select id="Type">
+                  <option value="All City">All City</option>
+                  <option value="Karachi">Karachi</option>
+                  <option value="Lahore">Lahore</option>
+                  <option value="Islamabad">Islamabad</option>
+                  <option value="Peshawar">Peshawar</option>
+                </select>
+              </div>
+
+              <div class="flex-form-Right">
+                <div><label for="Type">Type</label></div>
+                <select id="Type">
+                  <option value="All Type">All Type</option>
+                  <option value="For Rent">For Rent</option>
+                  <option value="For Sale">For Sale</option>
+                  <option value="Open House">Open House</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="flex-form-left">
+                <div><label for="Type">Bedrooms</label></div>
+                <select id="Type">
+                  <option value="Any">Any</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                </select>
+              </div>
+
+              <div class="flex-form-Right">
+                <div><label for="Type">Garages</label></div>
+                <select id="Type">
+                  <option value="All Type">Any</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="flex-form-left">
+                <div><label for="Type">Bathrooms</label></div>
+                <select id="Type">
+                  <option value="All Type">Any</option>
+                  <option value="01">01</option>
+                  <option value="02">02</option>
+                  <option value="03">03</option>
+                </select>
+              </div>
+
+              <div class="flex-form-Right">
+                <div><label for="Type">Min Price</label></div>
+                <select id="Type">
+                  <option value="Unlimited">Unlimited</option>
+                  <option value="$5000">$5000</option>
+                  <option value="$4300">$4300</option>
+                  <option value="$2000">$2000</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <button class="search-btn">Search Property</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Hero-Section -->
+    <section id="slider">
+      <div id="owl-demo" class="owl-carousel owl-them">
+        <div class="item">
+          <div class="item-text">
+            <h4>Doral, Florida <br />78454</h4>
+            <h2>
+              <span>204</span> ALIRA RINON<br />
+              ROAD ONE
+            </h2>
+            <button class="btn">RENT | $1500</button>
+          </div>
+        </div>
+        <div class="item item-bg">
+          <div class="item-text">
+            <h4>Excoral, Orida <br />369856</h4>
+            <h2>
+              <span>305</span> BIRUO MNOIP<br />
+              ROAD TWO
+            </h2>
+            <button class="btn">RENT | $1300</button>
+          </div>
+        </div>
+        <div class="item item-bg">
+          <div class="item-text">
+            <h4>VESTY, OPLUO <br />223652</h4>
+            <h2>
+              <span>210</span> XERTY KRTYU<br />
+              ROAD THREE
+            </h2>
+            <button class="btn">RENT | $2500</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services-Section -->
+    <section id="services">
+      <div class="wrapper services">
+        <h2 class="section-head">Our Services</h2>
+        <div class="service-box">
+          <div class="text-box">
+            <div class="small-box">
+              <div class="icon"><span class="fa fa-gamepad"></span></div>
+              <h3>Lifestyle</h3>
+            </div>
+            <p>
+              Sed porttitor lectus nibh. Cras ultricies ligula sed magna dictum
+              porta. Praesent sapien massa, convallis a pellentesque nec,
+              egestas non nisi.
+            </p>
+            <a href="#"
+              >Read More <i class="fa-solid fa-chevron-right fa-lg"></i
+            ></a>
+          </div>
+          <div class="text-box">
+            <div class="small-box">
+              <div class="icon"><span class="fa fa-usd"></span></div>
+              <h3>Loans</h3>
+            </div>
+            <p>
+              Nulla porttitor accumsan tincidunt. Curabitur aliquet quam id dui
+              posuere blandit. Mauris blandit aliquet elit, eget tincidunt nibh
+              pulvinar.
+            </p>
+            <a href="#"
+              >Read More <i class="fa-solid fa-chevron-right fa-lg"></i
+            ></a>
+          </div>
+          <div class="text-box">
+            <div class="small-box">
+              <div class="icon"><span class="fa fa-home"></span></div>
+              <h3>Sell</h3>
+            </div>
+            <p>
+              Zporttitor Mauris blandit aliquet ultr ligula sed magna dictum
+              porta. Praesent sapien massa, convallis a pellentesque nec,
+              egestas non nisi.
+            </p>
+            <a href="#"
+              >Read More <i class="fa-solid fa-chevron-right fa-lg"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Properties Section -->
+    <section id="properites">
+      <div class="wrapper properties">
+        <div class="heading">
+          <h2 class="section-head">Latest Properties</h2>
+          <h3>
+            All Properties <i class="fa-solid fa-chevron-right fa-lg"></i>
+          </h3>
+        </div>
+        <div class="properties-boxes owl-carousel1 owl-theme1" id="owl-demo1">
+          <div class="box pro-box">
+            <div class="text-area">
+              <div class="text-text">
+                <h3>
+                  206 Mount <br />
+                  Olive Road Two
+                </h3>
+                <button class="btn">RENT | $ 1200</button>
+                <h4>
+                  Click her to view
+                  <i class="fa-solid fa-chevron-right fa-lg"></i>
+                </h4>
+              </div>
+              <div class="box-footer">
+                <ul>
+                  <li>
+                    <h4 class="card-title">Area</h4>
+                    <span>340m<sup>2</sup></span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Beds</h4>
+                    <span>3</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Baths</h4>
+                    <span>2</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Garages</h4>
+                    <span>1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="box1 pro-box">
+            <div class="text-area">
+              <div class="text-text">
+                <h3>
+                  157 West <br />
+                  Central Park
+                </h3>
+                <button class="btn">RENT | $ 1600</button>
+                <h4>
+                  Click her to view
+                  <i class="fa-solid fa-chevron-right fa-lg"></i>
+                </h4>
+              </div>
+              <div class="box-footer">
+                <ul>
+                  <li>
+                    <h4 class="card-title">Area</h4>
+                    <span>360m<sup>2</sup></span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Beds</h4>
+                    <span>5</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Baths</h4>
+                    <span>1</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Garages</h4>
+                    <span>1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="box2 pro-box">
+            <div class="text-area">
+              <div class="text-text">
+                <h3>
+                  245 Azabu <br />
+                  Nishi Park let
+                </h3>
+                <button class="btn">RENT | $ 2200</button>
+                <h4>
+                  Click her to view
+                  <i class="fa-solid fa-chevron-right fa-lg"></i>
+                </h4>
+              </div>
+              <div class="box-footer">
+                <ul>
+                  <li>
+                    <h4 class="card-title">Area</h4>
+                    <span>430m<sup>2</sup></span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Beds</h4>
+                    <span>4</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Baths</h4>
+                    <span>5</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Garages</h4>
+                    <span>2</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="box3 pro-box">
+            <div class="text-area">
+              <div class="text-text">
+                <h3>
+                  455 Azabu <br />
+                  Fhuej Byu let
+                </h3>
+                <button class="btn">RENT | $ 1000</button>
+                <h4>
+                  Click her to view
+                  <i class="fa-solid fa-chevron-right fa-lg"></i>
+                </h4>
+              </div>
+              <div class="box-footer">
+                <ul>
+                  <li>
+                    <h4 class="card-title">Area</h4>
+                    <span>340m<sup>2</sup></span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Beds</h4>
+                    <span>3</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Baths</h4>
+                    <span>2</span>
+                  </li>
+                  <li>
+                    <h4 class="card-title">Garages</h4>
+                    <span>1</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Agents Section -->
+    <section id="agent">
+      <div class="wrapper agent">
+        <div class="heading">
+          <h2 class="section-head">Best Agents</h2>
+          <h3>All Agents <i class="fa-solid fa-chevron-right fa-lg"></i></h3>
+        </div>
+        <div class="agent-boxes">
+          <div class="agent-box">
+            <img src="assets/images/agent-5.jpg" alt="" />
+          </div>
+          <div class="agent-box">
+            <img src="assets/images/agent-1.jpg" alt="" />
+          </div>
+          <div class="agent-box">
+            <img src="assets/images/agent-3.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Latest News Section -->
+    <section id="news">
+      <div class="wrapper news">
+        <div class="heading">
+          <h2 class="section-head">Latest News</h2>
+          <h3>All News <i class="fa-solid fa-chevron-right fa-lg"></i></h3>
+        </div>
+        <div class="news-boxes owl-carousel2 owl-theme2" id="owl-demo2">
+          <div class="news-box img1">
+            <div class="text-news">
+              <button class="btn">House</button>
+              <h3>House is Coming New</h3>
+              <span>18 Sep. 2022</span>
+            </div>
+          </div>
+          <div class="news-box img2">
+            <div class="text-news">
+              <button class="btn">Travel</button>
+              <h3>Travle is Coming New</h3>
+              <span>18 Sep. 2022</span>
+            </div>
+          </div>
+          <div class="news-box img3">
+            <div class="text-news">
+              <button class="btn">Park</button>
+              <h3>Park is Coming New</h3>
+              <span>18 Sep. 2022</span>
+            </div>
+          </div>
+          <div class="news-box img4">
+            <div class="text-news">
+              <button class="btn">Beach</button>
+              <h3>Beach is Coming New</h3>
+              <span>18 Sep. 2022</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials">
+      <div class="wrapper">
+        <div class="heading">
+          <h2 class="section-head">Testimonials</h2>
+        </div>
+        <div class="testi-boxes owl-carousel4 owl-theme4">
+          <div class="slide">
+            <div class="testi-img">
+              <img src="assets/images/agent-4.jpg" alt="" />
+            </div>
+            <div class="testi-text">
+              <div class="testi-icon">
+                <span class="fas fa-quote-right fa-lg"></span>
+              </div>
+              <div class="test-p">
+                <p>
+                  In promotion and advertising, a testimonial or show consists
+                  of a person's written or spoken statement extolling the virtue
+                  of a product The term "testimonial" most commonly applies to
+                  the sales-pitches.
+                </p>
+              </div>
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="assets/images/author-2.jpg" alt="" />
+                </div>
+                <h4>Pabola Limma</h4>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="testi-img">
+              <img src="assets/images/testimonial-1.jpg" alt="" />
+            </div>
+            <div class="testi-text">
+              <div class="testi-icon">
+                <span class="fas fa-quote-right fa-lg"></span>
+              </div>
+              <div class="test-p">
+                <p>
+                  In promotion and advertising, a testimonial or show consists
+                  of a person's written or spoken statement extolling the virtue
+                  of a product The term "testimonial" most commonly applies to
+                  the sales-pitches.
+                </p>
+              </div>
+              <div class="profile">
+                <div class="profile-img">
+                  <img src="assets/images/mini-testimonial-1.jpg" alt="" />
+                </div>
+                <h4>Albert & Erika</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+      <div class="wrapper">
+        <div class="footer-columns">
+          <div class="footer-col">
+            <h3 class="footer-heading">Estate Agency</h3>
+            <p class="footer-para">
+              Enim minim veniam quis nostrud exercitation ullamco laboris nisi
+              ut aliquip exea commodo consequat duis sed aute irure.
+            </p>
+            <div class="footer-li">
+              <strong>Phone:</strong> contact@example.com
+            </div>
+            <div class="footer-li"><strong>Email:</strong> +54 356 945234</div>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">The Company</h3>
+            <ul class="footer-ul">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Site Map</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Legal</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Agent Admin</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Careers</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Affiliate</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Privacy Policy</span>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h3 class="footer-heading">International sites</h3>
+            <ul class="footer-ul">
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Venezuela</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>China</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Hong Kong</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Argentina</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i> <span>Singapore</span>
+              </li>
+              <li>
+                <i class="fa-solid fa-chevron-right"></i>
+                <span>Philippines</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-div">
+          <div class="footer-nav">
+            <span><a href="#">Home</a></span>
+            <span><a href="#">About</a></span>
+            <span><a href="#">Property</a></span>
+            <span><a href="#">Blog</a></span>
+            <span><a href="#">Contact</a></span>
+          </div>
+          <div class="footer-icons">
+            <span><i class="fab fa-facebook-f"></i></span>
+            <span><i class="fab fa-twitter"></i></span>
+            <span><i class="fab fa-instagram"></i></span>
+            <span><i class="fab fa-pinterest-p"></i></span>
+            <span><i class="fab fa-dribbble"></i></span>
+          </div>
+        </div>
+        <div class="small-footer">
+          <span
+            >&copy Copyright <strong>Estate Agency</strong> All Rights
+            Reserved.</span
+          >
+        </div>
+      </div>
+    </footer>
+
+    <!-- toper-icon -->
+    <a href="#" class="top-icon" id="top-icon">
+      <i class="fa-solid fa-chevron-up"></i>
+    </a>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/owl.carousel.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/animsition/4.0.2/js/animsition.js"
+      integrity="sha512-/k3xzxE438Du+m59yJ+coGSyEVot71Mq4TbMTPLUbxTuBe8wGpkpJp0rgsM+5qLuu3OL7+JBY0Pnas2V/8bl1Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </body>
+</html>
